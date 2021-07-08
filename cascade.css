@@ -1,0 +1,102 @@
+
+*{
+    margin: 0%;
+    padding: 2%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+   
+    background-image: url(https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+height: 100vh;
+padding: 10px;
+}
+.project{
+    color:#9b59b6;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    color: #e2e8ec;
+    max-width: 900px;
+    width: 100%;
+    background-color:rgb(0,0,0,0.5);
+    padding: 25px 40px;
+    border-radius: 20px;
+}
+
+.container .box{
+   width: 810px;
+ background:linear-gradient(140deg,#692a2a,#9b9b9b);
+    margin:auto;
+    color: aquamarine;
+    text-align: center;
+    padding: 3px 0px 4px 0px;
+    border-radius: 23px;
+}
+ .container form .u-details{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    }
+
+ form .u-details .input{
+     height: 100px;
+       width: calc(100%/2 -20px);
+       margin: 20px 0 20px 0;
+ }
+
+ form .u-details .input input{
+     height: 30px;
+     width: 100%;
+ }
+
+ form .u-details .input details{
+     display: block;
+     font-weight: 500%;
+     margin-bottom: 5px ;
+      
+ }
+ .u-details .input input{
+     height: 30px;
+     width: 200%;
+     overflow: hidden;
+     outline: none;
+     border-radius: 12px;
+     padding-left: 20px;
+     border-bottom-width:5px ;
+     transition: all 0.4s ease;
+
+ }
+
+ .u-details .input input:focus,
+ .u-details .input  input:valid{
+     border: #6b45d3;
+ }
+.container form .button {
+   display: flex; 
+   flex-wrap: wrap; 
+   justify-content:end;
+   margin: 30px 78px 0;
+
+}
+.container form .button .button1 input{
+    border-radius: 13px;
+    height: 50px;
+    width: 200px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container form .button .button2 input{
+    width: 200px;
+    height: 50px;
+    border-radius: 13px;
+    background:linear-gradient(135deg,#8babc0,#aa0ce9);
+}
+form .button .button1 input:hover{
+     background-color: #8babc0;
+ 
+}
+
