@@ -15,10 +15,12 @@ height: 100vh;
 padding: 10px;
 }
 .project{
+    
     color:#9b59b6;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
 }
+
 .container{
     color: #e2e8ec;
     max-width: 900px;
@@ -42,6 +44,9 @@ padding: 10px;
      flex-wrap: wrap;
      justify-content: space-between;
     }
+    
+    }  /* this coln maintian speces between icons but did'nt understand how??    */
+ 
 
  form .u-details .input{
      height: 100px;
@@ -96,7 +101,43 @@ padding: 10px;
     background:linear-gradient(135deg,#8babc0,#aa0ce9);
 }
 form .button .button1 input:hover{
-     background-color: #8babc0;
- 
+     background: linear-gradient(-13deg,#71b7e6,#9b59b6);
+        color: #857e88;
 }
 
+form .button .button2 input:hover{
+    background: linear-gradient(-13deg,#8babc0,#aa0ce9);
+    color: navajowhite;
+}
+
+/* Responsive Code */
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+        background-color: #692a2a;
+    }
+    .container .box{
+        max-width: 79%;
+    }
+    form .u-details .input{
+        margin: 15px;
+        width: 100px;
+    }
+    .container form .u-details {
+        max-height:270px;
+        overflow-y: scroll;
+    }
+    .u-details::-webkit-scrollbar{
+        width: 10px;
+    } 
+    form .button .button1{
+
+        max-width: 140%;
+        /* flex-direction: unset; */
+     
+    }
+    form .button .button2{
+        max-width: 140%;
+     
+    }
+}
